@@ -18,7 +18,8 @@ const logForMe = (message, method, tag, extraData) => {
     !message ||
     (_envAvaliable &&
       process.env.NODE_ENV &&
-      process.env.NODE_ENV.toUpperCase() !== _envAvaliable)
+      _envAvaliable.includes(process.env.NODE_ENV.trim().toUpperCase())) ===
+      false
   )
     return;
 
@@ -88,16 +89,20 @@ const setFlatData = (flat) =>
   (_flatInfo = flat && typeof flat === 'boolean' ? data : false);
 
 /**
- * @param {boolean} choice Will the log messages includes a timestamp?
+ * @param {boolean} view Will the log messages includes a timestamp?
  */
 const includeTimestamp = (view) =>
   (_viewTimestamp = view && typeof view === 'boolean' ? view : false);
 
 /**
- * @param {string} choice  * What NODE_ENV variable must be set to print the logs on terminal? The default value is null and all the messages will be printed.
+ * @param {string} arrayEnv  * What NODE_ENV variable must be set to print the logs on terminal? The default value is null and all the messages will be printed.
  */
-const setEnvironment = (env) =>
-  (_envAvaliable = env && typeof env === 'string' ? env.toUpperCase() : null);
+const setEnvironment = (arrayEnv) => {
+  _envAvaliable =
+    arrayEnv && arrayEnv.length
+      ? arrayEnv.map((item) => item.toString().trim().toUpperCase())
+      : null;
+};
 
 module.exports = {
   logForMe,
