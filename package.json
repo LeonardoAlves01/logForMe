@@ -1,0 +1,25 @@
+{
+  "name": "logforme",
+  "version": "1.0.0",
+  "description": "A simple, yet powerful logger system",
+  "main": "index.js",
+  "author": {
+    "name": "Leonardo Alves",
+    "email": "leoalves.comp@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeonardoAlves01/logForMe.git"
+  },
+  "keywords": [
+    "logforme",
+    "logger",
+    "log",
+    "simple yet powerful"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LeonardoAlves01/logForMe/issues"
+  },
+  "homepage": "https://github.com/LeonardoAlves01/logForMe#readme"
+}
