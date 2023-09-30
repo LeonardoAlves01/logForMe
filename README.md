@@ -1,8 +1,6 @@
 # LogForMe
 
-A simple and useful ally for your daily logs
-
-Easily logged message logs with custom, easily searched for **methods** and **tags**, with fields that can be specified for each message or set by default.
+A simple helper for your daily records, easily logged message logs with custom, easily searched for **methods** and **tags**, with fields that can be specified for each message or set by default.
 
 ---
 
