@@ -1,7 +1,7 @@
 {
   "name": "logforme",
   "version": "1.0.0",
-  "description": "A simple, yet powerful logger system",
+  "description": "Simple log helper for your everyday life",
   "main": "index.js",
   "author": {
     "name": "Leonardo Alves",
@@ -15,7 +15,7 @@
     "logforme",
     "logger",
     "log",
-    "simple yet powerful"
+    "simple"
   ],
   "license": "MIT",
   "bugs": {
